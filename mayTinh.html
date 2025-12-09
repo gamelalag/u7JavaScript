@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng tính toán</title>
+    <link rel="stylesheet" href="maytinh.css">
+</head>
+<body>
+<script src="mayTinh.js"></script>
+    <input type ="text" id = "numA"/><br><br>
+    <input type ="text" id = "numB"/><br><br>
+    <input type ="text" id = "result" disabled/><br><br>
+<input type="button" id="add" value="+"
+       onclick="setResult(add(getValueA(),getValueB()));"/>
+<input type="button"id="sub" value="-"
+onclick='setResult(sub(getValueA(),getValueB()));'/>
+<input type="button"id="mul"value="x"
+onclick="setResult(mul(getValueA(),getValueB()));"/>
+
+<input type="button" id="div"value=":"
+onclick="setResult(div(getValueA(),getValueB()));"/>
+<input type="button" id="mod"value="%"onclick="setResult(mod(getValueA(),getValueB()));"/>
+
+
+</body>
+</html>
