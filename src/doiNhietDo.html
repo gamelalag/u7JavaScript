@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi nhiệt độ</title>
+    <style>
+        .container { padding: 20px; font-family: sans-serif; }
+        input, button { padding: 10px; margin: 5px; }
+        #result { margin-top: 15px; font-weight: bold; color: blue; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Chuyển đổi nhiệt độ</h2>
+
+    <label for="temperatureInput">Nhập nhiệt độ:</label>
+    <input type="number" id="temperatureInput" placeholder="Nhập giá trị số">
+
+    <button onclick="doiTuC_sang_F()">C sang F</button>
+    <button onclick="doiTuF_sang_C()">F sang C</button>
+
+    <div id="result"></div>
+</div>
+
+<!-- Liên kết đến file JavaScript -->
+<script src="doiNhietDo.js"></script>
+</body>
+</html>

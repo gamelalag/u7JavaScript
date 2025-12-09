@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình tròn JS</title>
+</head>
+<body>
+<h2>Nhấn vào nút bên dưới để bắt đầu tính diện tích</h2>
+<button onclick="tinhDienTich()">Tính Diện Tích</button>
+
+
+<script>
+    function tinhDienTich() {
+        const inputBanKinh = prompt("Vui lòng nhập bán kính hình tròn:");
+
+        const banKinh = parseFloat(inputBanKinh);
+
+        if (isNaN(banKinh) || banKinh <= 0) {
+            alert("Giá trị không hợp lệ. Vui lòng nhập một số dương.");
+            return; //
+        }
+
+
+        const dienTich = Math.PI * (banKinh * banKinh);
+
+
+        const message = `
+            Kết Quả:
+            Bán kính: ${banKinh}
+            Diện tích: ${dienTich.toFixed(2)}
+            `;
+
+        alert(message);
+    }
+</script>
+</body>
+</html>
